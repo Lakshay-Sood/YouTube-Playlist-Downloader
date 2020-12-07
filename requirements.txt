@@ -1,0 +1,4 @@
+pytube3==9.6.4
+pyperclip==1.8.1
+selenium==3.141.0
+pytube==10.0.0

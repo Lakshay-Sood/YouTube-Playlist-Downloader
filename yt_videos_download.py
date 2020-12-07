@@ -29,7 +29,7 @@ while(len(urls_to_download) != 0 and tries < 5):
             stream = yt.streams.filter(progressive=True, file_extension='mp4').order_by(
                 'resolution').desc().first()
 
-            ### ⏬ UNCOMMENT ⏬ ###
+            ###  UNCOMMENT  ###
             stream.download(filename_prefix="{} - ".format(link.split('index=')
                                                            [-1]), output_path=r"D:\Downloads HDD\Courses\Web D 0\Clever Programmer")
 
@@ -37,7 +37,7 @@ while(len(urls_to_download) != 0 and tries < 5):
             print('Downloaded: ', link)
             downloaded += 1
         except:
-            print('💥💥ERROR:  ', link)
+            print('ERROR:  ', link)
             error_links.append(link)
 
     tries += 1

@@ -26,10 +26,11 @@ The program tries several times to redownload the erroneuos videos before printi
 
 ### Steps
 1) Run the 'yt_playlist_link_extractor.py' file in the terminal.
-2) Input (or paste) the playlist url when it prompts you to do so.
-3) Optional: make changes in the 'yt_videos_download.py' file. (Default: mp4 (video) at best quality)
-4) Run the 'yt_videos_download.py' file in the terminal.
-4) DONE!
+2) Open 'yt_videos_download.py' file in the code editor or IDE and do a 'Ctrl + v' (paste) right after 'urls_to_download = '
+3) Input (or paste) the playlist url when it prompts you to do so.
+4) Optional: make changes in the 'yt_videos_download.py' file. (Default: mp4 (video) at best quality)
+5) Run the 'yt_videos_download.py' file in the terminal.
+6) DONE!
 
 ### Future Versions
 1) Menu drived program to avoid any code edits by the user to change resolution, file format, etc.

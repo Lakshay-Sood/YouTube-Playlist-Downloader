@@ -5,7 +5,7 @@ import time
 
 # use the 'yt_playlist_link_extractor.py' file to extract videos links from a playlist and just Ctrl+V here
 urls_to_download = [
-    'https://youtu.be/DQfeB_FKKkc?list=PL-J2q3Ga50oMQa1JdSJxYoZELwOJAXExP']
+    'https://www.youtube.com/watch?v=RDV3Z1KCBvo']
 
 print("\n\n1) UNCOMMENT 'stream.download()' IN THE FOR LOOP \n2) AND CHECK DOWNLOAD LOCATION \n3) CHECK IF YOU NEED FILENAME PREFIX \n\n")
 # print("ALSO check the video quality\n\n")
@@ -31,7 +31,7 @@ while(len(urls_to_download) != 0 and tries < 5):
 
             ###  UNCOMMENT  ###
             stream.download(filename_prefix="{} - ".format(link.split('index=')
-                                                           [-1]), output_path=r"D:\Downloads HDD\Courses\Web D 0\Clever Programmer")
+                                                           [-1]), output_path=r"D:\Downloads HDD\Courses\Web D 0\Clever Programmer 0")
 
             # printing the links downloaded
             print('Downloaded: ', link)
@@ -89,3 +89,5 @@ print('\nEnd Time: {}\n'.format(current_time))
 ############## ONLY audio ENDS ############################
 
 ######################### MY TRIAL CODE ENDS ##############################
+
+# used pipreqs library to create the requirements.txt file

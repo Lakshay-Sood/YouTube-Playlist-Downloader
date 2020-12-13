@@ -22,7 +22,9 @@ The program tries several times to redownload the erroneous videos before printi
 ### Requirements
 1) You need to have python 3 installed on your system
 2) Download the required packages by running the "  pip install -r requirements.txt  " command in the terminal at the location where you clone/download this repository
-3) Voila! You are done.
+3) Download Microsoft Edge webdriver according to your browser version from https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+    (you can also make minor tweaks in the code to use it with Chrome or Firefox)
+4) Voila! You are done.
 
 ### Steps
 1) Run the 'yt_playlist_link_extractor.py' file in the terminal.

@@ -3,6 +3,7 @@ import pyperclip as pc
 import time
 ###################################################################################################
 
+# change the path to the edge webdriver (to match yours) (download it if you dont have it already)
 browser = webdriver.Edge('D:\\Downloads HDD\\#Setups\\msedgedriver')
 playlist_url = input("Enter the url of the youtube playlist: ")
 browser.get(playlist_url)

@@ -2,10 +2,12 @@
 from pytube import YouTube
 # to print start and end time
 import time
+# to copy error links (if any) to the clipbaord
+import pyperclip as pc
 
 # use the 'yt_playlist_link_extractor.py' file to extract videos links from a playlist and just Ctrl+V here
 urls_to_download = [
-    'https://www.youtube.com/watch?v=RDV3Z1KCBvo']
+    'https://www.youtube.com/watch?v=vSddEMFeUQI&list=PL6aFkLM6Wp-q0pEjqd9_QN3G_rgeV12ql&index=1']
 
 print("\n\n1) UNCOMMENT 'stream.download()' IN THE FOR LOOP \n2) AND CHECK DOWNLOAD LOCATION \n3) CHECK IF YOU NEED FILENAME PREFIX \n\n")
 # print("ALSO check the video quality\n\n")
@@ -31,7 +33,7 @@ while(len(urls_to_download) != 0 and tries < 5):
 
             ###  UNCOMMENT  ###
             stream.download(filename_prefix="{} - ".format(link.split('index=')
-                                                           [-1]), output_path=r"D:\Downloads HDD\Courses\Web D 0\Clever Programmer 0")
+                                                           [-1]), output_path=r"D:\Downloads HDD")
 
             # printing the links downloaded
             print('Downloaded: ', link)
@@ -57,6 +59,7 @@ print("\n{} / {} videos downloaded successfully.\n".format(downloaded, total))
 if len(urls_to_download) != 0:
     print("\nError links of {} videos:".format(len(urls_to_download)))
     print(' \n'.join(urls_to_download.__str__().split(' ')))
+    pc.copy(' \n'.join(urls_to_download.__str__().split(' ')))
 
 current_time = time.strftime("%H:%M:%S", time.localtime())
 print('\nEnd Time: {}\n'.format(current_time))
